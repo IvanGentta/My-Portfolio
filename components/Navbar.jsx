@@ -165,12 +165,17 @@ const Navbar = () => {
                 <a
                   href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <FaLinkedinIn />
                   </div>
                 </a>
-                <a href="https://github.com/IvanGentta" target="_blank">
+                <a
+                  href="https://github.com/IvanGentta"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="sombra-icon p-3">
                     <FaGithub />
                   </div>
@@ -178,6 +183,7 @@ const Navbar = () => {
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=genttaivan@gmail.com"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <AiOutlineMail />
@@ -186,6 +192,7 @@ const Navbar = () => {
                 <a
                   href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635500907577/single-media-viewer/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <BsFillPersonLinesFill />

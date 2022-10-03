@@ -25,14 +25,23 @@ const ProjectOne = () => {
           <p>
             A wether app that gives you the temperature and the humidity among
             other info of any place you search. I pull the info from the
-            "OpenWeatherMap API" and use "Axios" to make the API calls. I also
-            use "React-icons" and "Tailwind" libraries, and a little bit of
-            Photoshop to make prettier PNGs. This web app is fully responsive.
+            &quot;OpenWeatherMap API&quot; and use &quot;Axios&quot; to make the
+            API calls. I also use &quot;React-icons&quot; and
+            &quot;Tailwind&quot; libraries, and a little bit of Photoshop to
+            make prettier PNGs. This web app is fully responsive.
           </p>
-          <a href="https://weather-app-two-smoky.vercel.app/" target="_blank">
+          <a
+            href="https://weather-app-two-smoky.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">demo</button>
           </a>
-          <a href="https://github.com/IvanGentta/weather-app" target="_blank">
+          <a
+            href="https://github.com/IvanGentta/weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">code</button>
           </a>
         </div>

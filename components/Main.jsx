@@ -27,12 +27,17 @@ const MainComponent = () => {
             <a
               href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="sombra-icon p-5">
                 <FaLinkedinIn />
               </div>
             </a>
-            <a href="https://github.com/IvanGentta" target="_blank">
+            <a
+              href="https://github.com/IvanGentta"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="sombra-icon p-5">
                 <FaGithub />
               </div>
@@ -40,6 +45,7 @@ const MainComponent = () => {
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=genttaivan@gmail.com"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="sombra-icon p-5">
                 <AiOutlineMail />
@@ -48,6 +54,7 @@ const MainComponent = () => {
             <a
               href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635500907577/single-media-viewer/"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="sombra-icon p-5">
                 <BsFillPersonLinesFill />

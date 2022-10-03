@@ -38,12 +38,17 @@ const Contact = () => {
                     <a
                       href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="sombra-icon p-5">
                         <FaLinkedinIn />
                       </div>
                     </a>
-                    <a href="https://github.com/IvanGentta" target="_blank">
+                    <a
+                      href="https://github.com/IvanGentta"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="sombra-icon p-5">
                         <FaGithub />
                       </div>
@@ -51,6 +56,7 @@ const Contact = () => {
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=genttaivan@gmail.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="sombra-icon p-5">
                         <AiOutlineMail />
@@ -59,6 +65,7 @@ const Contact = () => {
                     <a
                       href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635500907577/single-media-viewer/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <div className="sombra-icon p-5">
                         <BsFillPersonLinesFill />
@@ -72,6 +79,7 @@ const Contact = () => {
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-700 rounded-xl p-6">
             <div className="px-16">
               <form
+                rel="noreferrer"
                 method="POST"
                 action="https://getform.io/f/a6e1aaa3-6d74-4c75-ae93-67b6b0a33377"
               >

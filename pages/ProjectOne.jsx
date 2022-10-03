@@ -24,14 +24,22 @@ const ProjectOne = () => {
           <h3>Overview</h3>
           <p>
             In this project I use the Google API to make a custom search engine.
-            I use "React-icons" and "Tailwind" libraries. I also use Pagination
-            to manage the diferent pages of the search results This web app is
-            fully responsive.
+            I use &quot;React-icons&quot; and &quot;Tailwind&quot; libraries. I
+            also use Pagination to manage the diferent pages of the search
+            results This web app is fully responsive.
           </p>
-          <a href="https://google-clon-ten.vercel.app/" target="_blank">
+          <a
+            href="https://google-clon-ten.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8">demo</button>
           </a>
-          <a href="https://github.com/IvanGentta/Google-Clon" target="_blank">
+          <a
+            href="https://github.com/IvanGentta/Google-Clon"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">code</button>
           </a>
         </div>

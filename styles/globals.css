@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f0f1e0] text-[#1f2937] tracking-wide;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h3 {
+    @apply text-[#004aad] tracking-widest text-lg;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-br from-[#004aad] to-[#6d00ad] text-white;
+  }
+
+  .sombra-icon {
+    @apply rounded-full shadow-xl shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300;
+  }
+
+  .sombra {
+    @apply shadow-xl shadow-gray-700 rounded-xl hover:scale-105 ease-in duration-300;
+  }
+}

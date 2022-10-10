@@ -1,28 +1,26 @@
-import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
+import en from "../translations/main/en";
+import es from "../translations/main/es";
 
 const MainComponent = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="text-md tracking-widest">
-            LET&apos;S BUILD SOMETHING TOGETHER
-          </p>
+          <p className="text-md tracking-widest">{translation.titulo}</p>
           <h1 className="pt-3">
-            Hi, My Name Is <span className="text-[#004aad]">Iván</span>
+            {translation.hi}
+            <span className="text-[#004aad]">Iván</span>
           </h1>
-          <h1 className="py-3">I&apos;m A Front-End Web Developer</h1>
-          <p className="text-md pt-3 max-w-[60%] m-auto">
-            I&apos;m from Argentina. I specialize in building and designing
-            responsive front-end web applications, with react.js. I&apos;m
-            always trying to improve and acquire knowledge in my field, and at
-            the moment I am learning Photoshop and back-end technologies to
-            complement my existing technical foundation.
-          </p>
-
+          <h1 className="py-3">{translation.developer}</h1>
+          <p className="text-md pt-3 max-w-[60%] m-auto">{translation.text}</p>
           <div className="flex items-center justify-between max-w-[330px] m-auto pt-4">
             <a
               href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/"

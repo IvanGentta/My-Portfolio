@@ -1,10 +1,12 @@
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import en from "../translations/navbar/en";
+import es from "../translations/navbar/es";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,6 +14,14 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState("#f0f1e0");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
+
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
+  const changeLanguage = (e) => {
+    const locale = e.target.value;
+    router.push("/", "/", { locale });
+  };
 
   useEffect(() => {
     if (
@@ -62,40 +72,51 @@ const Navbar = () => {
             height="75"
           />
         </Link>
-        <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <Link href="/">
-              <li
-                id="/#home"
-                className="ml-10 text-sm hover:border-b border-black"
-              >
-                HOME
-              </li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm hover:border-b border-black">
-                ABOUT
-              </li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm hover:border-b border-black">
-                SKILLS
-              </li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm hover:border-b border-black">
-                PROJECTS
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm hover:border-b border-black">
-                CONTACT
-              </li>
-            </Link>
-          </ul>
-          <div onClick={handleNav} className="md:hidden ">
-            <AiOutlineMenu size={25} />
-          </div>
+        <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <select
+            defaultValue={locale}
+            onChange={changeLanguage}
+            className="ml-10 text-sm font-bold text-white uppercase cursor-pointer
+             bg-[#5651e5] rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
+          >
+            <option className="ml-10 text-sm font-bold" value="en">
+              EN
+            </option>
+            <option className="ml-10 text-sm font-bold" value="es">
+              ES
+            </option>
+          </select>
+          <Link href="/">
+            <li
+              id="/#home"
+              className="ml-10 text-sm hover:border-b border-black"
+            >
+              {translation.home}
+            </li>
+          </Link>
+          <Link href="/#about">
+            <li className="ml-10 text-sm hover:border-b border-black">
+              {translation.about}
+            </li>
+          </Link>
+          <Link href="/#skills">
+            <li className="ml-10 text-sm hover:border-b border-black">
+              {translation.skills}
+            </li>
+          </Link>
+          <Link href="/#projects">
+            <li className="ml-10 text-sm hover:border-b border-black">
+              {translation.projects}
+            </li>
+          </Link>
+          <Link href="/#contact">
+            <li className="ml-10 text-sm hover:border-b border-black">
+              {translation.contact}
+            </li>
+          </Link>
+        </ul>
+        <div onClick={handleNav} className="md:hidden ">
+          <AiOutlineMenu size={25} />
         </div>
       </div>
       <div
@@ -126,56 +147,51 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-400 my-6">
-              <p className="py-3">
-                Coding is awesome! Let&apos;s code together.
-              </p>
+              <p className="py-3">{translation.codeAwesome}</p>
             </div>
           </div>
           <div className="flex flex-col">
             <ul>
               <Link href="/#home">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  HOME
+                  {translation.home}
                 </li>
               </Link>
               <Link href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  ABOUT
+                  {translation.about}
                 </li>
               </Link>
               <Link href="/#skills">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  SKILLS
+                  {translation.skills}
                 </li>
               </Link>
               <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  PROJECTS
+                  {translation.projects}
                 </li>
               </Link>
               <Link href="/#contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  CONTACT
+                  {translation.contact}
                 </li>
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="tracking-widest text-[#004aad]">CONNECT WITH ME</p>
+              <p className="tracking-widest text-[#004aad]">
+                {translation.connect}
+              </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
                   href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <FaLinkedinIn />
                   </div>
                 </a>
-                <a
-                  href="https://github.com/IvanGentta"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://github.com/IvanGentta" target="_blank">
                   <div className="sombra-icon p-3">
                     <FaGithub />
                   </div>
@@ -183,7 +199,6 @@ const Navbar = () => {
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=genttaivan@gmail.com"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <AiOutlineMail />
@@ -192,7 +207,6 @@ const Navbar = () => {
                 <a
                   href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635500907577/single-media-viewer/"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <div className="sombra-icon p-3">
                     <BsFillPersonLinesFill />

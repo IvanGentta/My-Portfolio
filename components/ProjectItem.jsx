@@ -1,8 +1,14 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import en from "../translations/projectItem/en";
+import es from "../translations/projectItem/es";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl, info }) => {
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-700 rounded-xl p-4 group hover:bg-gradient-to-br from-[#004aad] to-[#6d00ad]">
       <Image
@@ -20,7 +26,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, info }) => {
         <p className="text-white text-md text-center py-2">{info}</p>
         <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white font-bold text-lg cursor-pointer">
-            More Info
+            {translation.information}
           </p>
         </Link>
       </div>

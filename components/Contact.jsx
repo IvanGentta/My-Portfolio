@@ -1,16 +1,22 @@
-import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import en from "../translations/contact/en";
+import es from "../translations/contact/es";
 
 const Contact = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <h3 className="py-2">CONTACT</h3>
-        <h1 className="py-2">Get in touch</h1>
+        <h3 className="py-2">{translation.contact}</h3>
+        <h1 className="py-2">{translation.touch}</h1>
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-700 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -23,15 +29,12 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="pt-2 text-[#004aad] text-lg">Iván Gentta</h2>
-                <p>Front-End Developer</p>
-                <p className="py-6 underline">
-                  Currently looking for an Internship, a Part-Time Job or even a
-                  Full-Time Job.
-                </p>
+                <p>{translation.frontEnd}</p>
+                <p className="py-6 underline">{translation.jobSearch}</p>
               </div>
               <div>
                 <p className="tracking-widest text-[#004aad] pt-8">
-                  CONNECT WITH ME
+                  {translation.connect}
                 </p>
                 <div>
                   <div className="flex items-center justify-between md:justify-around m-auto pt-4">
@@ -84,7 +87,7 @@ const Contact = () => {
                 action="https://getform.io/f/a6e1aaa3-6d74-4c75-ae93-67b6b0a33377"
               >
                 <div className="flex flex-col py-2">
-                  <label className="py-2">NAME</label>
+                  <label className="py-2">{translation.name}</label>
                   <input
                     name="name"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -100,7 +103,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2">SUBJECT</label>
+                  <label className="py-2">{translation.subject}</label>
                   <input
                     name="subject"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -108,7 +111,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-4">
-                  <label className="py-2">MESSAGE</label>
+                  <label className="py-2">{translation.message}</label>
                   <textarea
                     name="message"
                     className="border-2 rounded-lg p-3 border-gray-300"
@@ -116,7 +119,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 my-4">
-                  Send Message
+                  {translation.send}
                 </button>
               </form>
             </div>

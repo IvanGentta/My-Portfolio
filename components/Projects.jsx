@@ -1,27 +1,33 @@
 import Image from "next/image";
-import React from "react";
 import ProjectItem from "./ProjectItem";
 import ImgProjectOne from "/public/assets/project-weatherApp.png";
 import ImgProjectTwo from "/public/assets/project-google.png";
+import en from "../translations/projectos/en";
+import es from "../translations/projectos/es";
+import { useRouter } from "next/router";
 
 const Projects = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <h3 className="py-2">PROJECTS</h3>
-        <h1 className="py-2">What I&apos;ve built</h1>
+        <h3 className="py-2">{translation.projects}</h3>
+        <h1 className="pb-3">{translation.built}</h1>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Weather App"
-            backgroundImg={ImgProjectOne}
-            projectUrl="/ProjectTwo"
-            info="Web app to know what is the weather like in any place in the world"
-          />
-          <ProjectItem
-            title="Google Search Clon"
+            title={translation.tituloGoogle}
             backgroundImg={ImgProjectTwo}
             projectUrl="/ProjectOne"
-            info="A Google clon where you can actually search what you want"
+            info={translation.infoGoogle}
+          />
+          <ProjectItem
+            title={translation.tituloWeather}
+            backgroundImg={ImgProjectOne}
+            projectUrl="/ProjectTwo"
+            info={translation.infoWeather}
           />
           <div
             className="relative flex items-center justify-center h-auto w-full shadow-xl
@@ -36,7 +42,7 @@ const Projects = () => {
             />
             <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
               <h2 className="text-white text-2xl tracking-widest text-center">
-                I&apos;m always coding, so there will be more projects soon!
+                {translation.coding}
               </h2>
             </div>
           </div>

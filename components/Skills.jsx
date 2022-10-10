@@ -1,11 +1,18 @@
-import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import en from "../translations/skills/en";
+import es from "../translations/skills/es";
+
 const Skills = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const translation = locale === "en" ? en : es;
+
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <h3 className="py-2">SKILLS</h3>
-        <h1 className="pb-10">What I know</h1>
+        <h3 className="py-2">{translation.skills}</h3>
+        <h1 className="pb-10">{translation.what}</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="p-6 sombra">
             <div className="grid grid-cols-2 gap-4 items-center">

@@ -1,0 +1,9 @@
+{
+  "title": "Weather App",
+  "project": "PROJECT",
+  "overview": "Overview",
+  "text": "A wether app that gives you the temperature and the humidity among other info of any place you search. I pull the info from the 'OpenWeatherMap API' and use 'Axios' to make the API calls. I also use 'React-icons' and 'Tailwind' libraries, and a little bit of 'Photoshop' to make prettier PNGs. This web app is fully responsive.",
+  "code": "code",
+  "techs": "Technologies",
+  "back": "Back"
+}

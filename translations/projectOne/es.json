@@ -1,0 +1,9 @@
+{
+  "title": "Clon Buscador Google",
+  "project": "PROYECTO",
+  "overview": "Detalles",
+  "text": "En este proyecto uso la API de Google para hacer un buscador personalizado. Uso las librerias 'React-icons' y 'Tailwind'. También utilicé 'Pagination' para manejar las distintas páginas de los resultados. Esta web app es totalmente responsiva.",
+  "code": "código",
+  "techs": "Tecnologias",
+  "back": "Volver"
+}

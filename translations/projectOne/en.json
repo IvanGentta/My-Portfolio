@@ -1,0 +1,9 @@
+{
+  "title": "Google Search Clon",
+  "project": "PROJECT",
+  "overview": "Overview",
+  "text": "In this project I use the Google API to make a custom search engine. I use 'React-icons' and 'Tailwind' libraries. I also use 'Pagination' to manage the diferent pages of the search results. This web app is fully responsive.",
+  "code": "code",
+  "techs": "Technologies",
+  "back": "Back"
+}

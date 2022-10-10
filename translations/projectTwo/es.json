@@ -1,0 +1,9 @@
+{
+  "title": "Aplicación Del Clima",
+  "project": "PROYECTO",
+  "overview": "Detalles",
+  "text": "Una App del clima que muestra la temperatura y humedad, entre otros datos, de cualquier lugar que busque el usuario. Obtengo la info de la API 'OpenWeatherMap' y uso'Axios' para manejar la info de la API. También uso las librerias 'React-icons' y 'Tailwind', y un poco de 'Photoshop' para hacer PNGs más lindos. Esta web app es totalmente responsiva.",
+  "code": "codigo",
+  "techs": "Tecnologías",
+  "back": "Back"
+}

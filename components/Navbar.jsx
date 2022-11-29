@@ -72,62 +72,66 @@ const Navbar = () => {
             height="75"
           />
         </Link>
-        <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-          <select
-            defaultValue={locale}
-            onChange={changeLanguage}
-            className="ml-10 text-sm font-bold text-white uppercase cursor-pointer
-             bg-[#5651e5] rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
-          >
-            <option className="ml-10 text-sm font-bold" value="en">
-              EN
-            </option>
-            <option className="ml-10 text-sm font-bold" value="es">
-              ES
-            </option>
-          </select>
-          <Link href="/">
-            <li
-              id="/#home"
-              className="ml-10 text-sm hover:border-b border-black"
+        <div className="flex">
+          <div className="mx-5">
+            <select
+              defaultValue={locale}
+              onChange={changeLanguage}
+              className="text-sm font-bold text-white uppercase cursor-pointer
+            bg-[#5651e5] rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
             >
-              {translation.home}
-            </li>
-          </Link>
-          <Link href="/#about">
-            <li className="ml-10 text-sm hover:border-b border-black">
-              {translation.about}
-            </li>
-          </Link>
-          <Link href="/#skills">
-            <li className="ml-10 text-sm hover:border-b border-black">
-              {translation.skills}
-            </li>
-          </Link>
-          <Link href="/#projects">
-            <li className="ml-10 text-sm hover:border-b border-black">
-              {translation.projects}
-            </li>
-          </Link>
-          <Link href="/#contact">
-            <li className="ml-10 text-sm hover:border-b border-black">
-              {translation.contact}
-            </li>
-          </Link>
-        </ul>
-        <div onClick={handleNav} className="md:hidden ">
-          <AiOutlineMenu size={25} />
+              <option className="ml-10 text-sm font-bold" value="en">
+                EN
+              </option>
+              <option className="ml-10 text-sm font-bold" value="es">
+                ES
+              </option>
+            </select>
+          </div>
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+            <Link href="/">
+              <li
+                id="/#home"
+                className="ml-10 text-sm hover:border-b border-black"
+              >
+                {translation.home}
+              </li>
+            </Link>
+            <Link href="/#about">
+              <li className="ml-10 text-sm hover:border-b border-black">
+                {translation.about}
+              </li>
+            </Link>
+            <Link href="/#skills">
+              <li className="ml-10 text-sm hover:border-b border-black">
+                {translation.skills}
+              </li>
+            </Link>
+            <Link href="/#projects">
+              <li className="ml-10 text-sm hover:border-b border-black">
+                {translation.projects}
+              </li>
+            </Link>
+            <Link href="/#contact">
+              <li className="ml-10 text-sm hover:border-b border-black">
+                {translation.contact}
+              </li>
+            </Link>
+          </ul>
+          <div onClick={handleNav} className="md:hidden ">
+            <AiOutlineMenu size={25} />
+          </div>
         </div>
       </div>
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] h-full bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >

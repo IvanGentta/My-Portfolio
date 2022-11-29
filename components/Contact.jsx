@@ -13,12 +13,12 @@ const Contact = () => {
   const translation = locale === "en" ? en : es;
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+    <div id="contact" className="w-full">
+      <div className="m-auto px-2 py-16 w-full">
         <h3 className="py-2">{translation.contact}</h3>
         <h1 className="py-2">{translation.touch}</h1>
-        <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-700 rounded-xl p-4">
+        <div className="grid col-span-3 lg:grid-cols-5 gap-8">
+          <div className="col-span-2 lg:col-span-3 w-full h-full shadow-xl shadow-gray-700 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 <img
@@ -79,8 +79,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-700 rounded-xl p-6">
-            <div className="px-16">
+          <div className="col-span-2 w-full h-auto shadow-xl shadow-gray-700 rounded-xl p-6">
+            <div className="">
               <form
                 rel="noreferrer"
                 method="POST"

@@ -50,7 +50,7 @@ const MainComponent = () => {
               </div>
             </a>
             <a
-              href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635500907577/single-media-viewer/"
+              href="https://www.linkedin.com/in/iv%C3%A1n-ariel-gentta-117077231/overlay/1635523560377/single-media-viewer/?profileId=ACoAADnaNuMBJ5ikwWKqzKw1gWjjB4FOUzDMGmo"
               target="_blank"
               rel="noreferrer"
             >

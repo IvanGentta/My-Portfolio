@@ -78,7 +78,7 @@ const Navbar = () => {
               defaultValue={locale}
               onChange={changeLanguage}
               className="text-sm font-bold text-white uppercase cursor-pointer
-            bg-[#5651e5] rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
+            bg-[#5651e5] p-1 rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
             >
               <option className="ml-10 text-sm font-bold" value="en">
                 EN

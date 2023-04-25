@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my personal portfolio, a [Next.js](https://nextjs.org/) project styled with [Tailwind.css](https://tailwindcss.com/)
 
-## Getting Started
+# Iván Gentta | Portfolio
 
-First, run the development server:
+###### Based in Argentina!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This site will work as a presentation of my work and a kind of a jounal of my journey as a Full-Stack developer !
+While I keep learning, I keep improving this site with new features and cleaner code.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Technologies:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- NextJS
+- Reactwich
+- Tailwind CSS
+- Yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Full responsive / Components
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can view my projects in any device, I always work mobile first.
 
-## Learn More
+- You can navigate my portfolio with its fixed _navbar_.
+- Get to know me in the _main_ and _about_ components.
+- In the _skills_ component see what technologies I know.
+- See a demo and its code of my other projects in the _projects_ component.
+- And in the _contact_ component you can get in touch with me with a form from [getForm.io](https://getform.io/)
 
-To learn more about Next.js, take a look at the following resources:
+## Translations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Now with Spanish and English translations !
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+It detects the language of your browser and set it and also you can choose from the navbar wich language you want.
 
-## Deploy on Vercel
+## Prettier README.md
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I just learn to log my projects with this beautiful README, what do you think?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks for passing by ! **Iván Gentta**

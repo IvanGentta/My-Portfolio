@@ -1,8 +1,6 @@
 This is my personal portfolio, a [Next.js](https://nextjs.org/) project styled with [Tailwind.css](https://tailwindcss.com/)
 
-# Iván Gentta | Portfolio
-
-###### Based in Argentina!
+# Iván Gentta | Portfolio ###### Based in Argentina!
 
 This site will work as a presentation of my work and a kind of a jounal of my journey as a Full-Stack developer !
 While I keep learning, I keep improving this site with new features and cleaner code.

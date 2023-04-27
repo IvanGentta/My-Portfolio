@@ -4,7 +4,7 @@ This is my personal portfolio, a [Next.js](https://nextjs.org/) project styled w
 
 # Iván Gentta | Portfolio
 
-This site will work as a presentation of my work and a kind of a jounal of my journey as a Full-Stack developer !
+This site will work as a presentation of my work and as kind of a journal of my journey as a Full-Stack developer !
 While I keep learning, I keep improving this site with new features and cleaner code.
 
 Technologies:
@@ -16,7 +16,7 @@ Technologies:
 
 ## Full responsive / Components
 
-You can view my projects in any device, I always work mobile first.
+You can view my projects in any device, I always start from the mobile view #mobileFirst.
 
 - You can navigate my portfolio with its fixed _navbar_.
 - Get to know me in the _main_ and _about_ components.

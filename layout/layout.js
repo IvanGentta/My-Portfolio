@@ -5,7 +5,7 @@ const layout = ({ children }) => {
   const router = useRouter();
   const { asPath } = router;
 
-  const noNavbar = ["/ProjectOne", "/ProjectTwo"];
+  const noNavbar = ["/ProjectOne", "/ProjectTwo", "/ProjectThree"];
 
   return (
     <>

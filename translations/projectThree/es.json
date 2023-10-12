@@ -1,0 +1,8 @@
+{
+  "title": "Krooma Studio página web",
+  "project": "PROYECTO",
+  "overview": "Detalles",
+  "text": "Mi primer trabajo de verdad para una agencia creativa, animada con la libreria 'AOS', carruseles con las librerias 'swiper' y 'react-responsive-carrousel', y un formulario de contacto totalmente funcional que te redirige a la página de inicio una vez que se mande el formulario. Totalmente responsivo. Fue mi primera vez trabajando con un equipo, usamos Figma para el diseño y Gitlab para el trabajo remoto con branches. Sin codigo para mostar esta vez :( es confidencial!",
+  "techs": "Tecnologias",
+  "back": "Volver"
+}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import ProjectItem from "./ProjectItem";
 import ImgProjectOne from "/public/assets/project-weatherApp.png";
 import ImgProjectTwo from "/public/assets/project-google.png";
+import ImgProjectThree from "/public/assets/proyectoKrooma.JPG";
 import en from "../translations/projectos/en";
 import es from "../translations/projectos/es";
 import { useRouter } from "next/router";
@@ -28,6 +29,12 @@ const Projects = () => {
             backgroundImg={ImgProjectOne}
             projectUrl="/ProjectTwo"
             info={translation.infoWeather}
+          />
+          <ProjectItem
+            title={translation.tituloKrooma}
+            backgroundImg={ImgProjectThree}
+            projectUrl="/ProjectThree"
+            info={translation.infoKrooma}
           />
           <div
             className="relative flex items-center justify-center h-auto w-full shadow-xl

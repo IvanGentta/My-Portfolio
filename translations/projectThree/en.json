@@ -1,0 +1,8 @@
+{
+  "title": "Krooma Studio landing page",
+  "project": "PROJECT",
+  "overview": "Overview",
+  "text": "My first real job for a creative agency, animated with the 'AOS' library, some carrousels with 'Swiper' and 'react-responsive-carrousel' libraries, and fully functional contact form wich redirects you to the home page once you send it. Fully responsive. It was my first time working with a team, we use Figma for the design and Gitlab for the remotely work with branches. Sorry no code :( its confidential!",
+  "techs": "Technologies",
+  "back": "Back"
+}

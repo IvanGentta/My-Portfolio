@@ -14,6 +14,15 @@ const MainComponent = () => {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
+          <p className="text-2xl mb-5 bg-blue-500">
+            This is my old portfolio, check{" "}
+            <a
+              href="https://portfolio-gentta.vercel.app/"
+              className="text-bold underline"
+            >
+              My new Portfolio Here!
+            </a>
+          </p>
           <p className="text-md tracking-widest">{translation.titulo}</p>
           <h1 className="pt-3">
             {translation.hi}
